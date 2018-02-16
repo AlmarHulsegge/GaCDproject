@@ -1,6 +1,7 @@
 <b> Codebook for Getting and Cleaning Data, week 4, course project
-
+  
 This code book describes the the experiment, data, the variables and transformations or work that I performed to clean up the data.
+
 
 <b>The experiment leading to the "Human Activity Recognition Using Smartphones Dataset"
 
@@ -16,8 +17,9 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-<b>The data
 
+<b>The data
+  
 The data is spread out over different files. See below for the names of the files used in the analysis and a short decription per file.
 
 X_train.txt :contains training set.
@@ -32,7 +34,9 @@ y_test.txt  :contains test labels.
 features.txt        :list of all features.
 activity_labels.txt :links the class labels with their activity name.
 
+
 <b>The variables
+  
 The training and test sets each contain for each observation a 561-feature vector with time and frequency domain variables.
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -93,7 +97,7 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 
 <b>Transformations
-
+  
 The columnnames in the activitylabels will be renamed to "activity_id" and "activity_label".
 The subject and label data frames of train and test are then added to the test- and trainsets.
 Then the big merge takes place: the extended train and test sets are being merged into one data set.
@@ -104,5 +108,5 @@ The mean is being computed for the data set, grouped by subject and activity
 The output is being written to a file called "TidyData.txt"
 
 <b>Result
-
+  
 The result is a tidy data set that is created by the script. The tidy data set contains 
