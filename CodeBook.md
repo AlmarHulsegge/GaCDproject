@@ -1,4 +1,4 @@
-<b> Codebook for Getting and Cleaning Data, week 4, course project
+<b> Codebook for Getting and Cleaning Data, week 4, course project</b>
   
 This code book describes the the experiment, data, the variables and transformations or work that I performed to clean up the data.
 
