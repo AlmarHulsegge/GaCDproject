@@ -1,8 +1,9 @@
 <b> Codebook for Getting and Cleaning Data, week 4, course project</b>
+
 This code book describes the the experiment, data, the variables and transformations or work that I performed to clean up the data.
 
 
-<b>The experiment leading to the "Human Activity Recognition Using Smartphones Dataset"
+<b>The experiment leading to the "Human Activity Recognition Using Smartphones Dataset"</b>
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -17,7 +18,7 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 
-<b>The data
+<b>The data</b>
   
 The data is spread out over different files. See below for the names of the files used in the analysis and a short decription per file.
 
@@ -34,7 +35,7 @@ features.txt        :list of all features.
 activity_labels.txt :links the class labels with their activity name.
 
 
-<b>The variables
+<b>The variables</b>
   
 The training and test sets each contain for each observation a 561-feature vector with time and frequency domain variables.
 
@@ -95,7 +96,7 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-<b>Transformations
+<b>Transformations</b>
   
 The columnnames in the activitylabels will be renamed to "activity_id" and "activity_label".
 The subject and label data frames of train and test are then added to the test- and trainsets.
@@ -106,6 +107,6 @@ The variable names are being cleaned up from special characters and are being ma
 The mean is being computed for the data set, grouped by subject and activity
 The output is being written to a file called "TidyData.txt"
 
-<b>Result
+<b>Result</b>
   
 The result is a tidy data set that is created by the script. The tidy data set contains 
